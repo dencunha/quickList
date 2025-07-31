@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <title>QuickList</title>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.svg" alt="logo">
+    </header>
+
+    <main>
+        <section id="head">
+            <a href="#">
+                <img src="assets/icons/arrow.svg" alt="seta de voltar">
+                <span>Voltar</span>
+            </a>
+            <h1>Compras da semana</h1>
+        </section>
+
+        <section>
+            <form>
+                <input id="newItem" name="item" type="text" placeholder="Adicione um novo item">
+                <button type="submit">Adicionar Item</button>
+            </form>
+            
+            <ul class="shop-list" id="shop-list">
+                <li class="itens list" id="item-list1">
+                    <div>
+                       <input type="checkbox" id="item1">
+                       <label for="item1">Pão de forma</label>
+                    </div>
+                    <button class="remove" id="button1" aria-label="remover item"><img src="assets/icons/trash.svg" alt=""></button>
+                </li>
+
+                <li class="itens list" id="item-list2">
+                    <div>
+                        <input type="checkbox" id="item2">
+                        <label for="item2">Pó de café</label>
+                    </div>
+                    <button class="remove" id="button2" aria-label="remover item"><img src="assets/icons/trash.svg" alt=""></button>
+                </li>
+
+                <li class="itens list" id="item-list3">
+                    <div>
+                        <input type="checkbox" id="item3">
+                        <label for="item3">Suco de laranja</label>
+                    </div>
+                    <button class="remove" id="button3" aria-label="remover item"><img src="assets/icons/trash.svg" alt=""></button>
+                </li>
+
+                <li class="itens list" id="item-list4">
+                    <div>
+                        <input type="checkbox" id="item4">
+                        <label for="item4">Bolacha</label>
+                    </div>
+                    <button class="remove" id="button4" aria-label="remover item"><img src="assets/icons/trash.svg" alt=""></button>
+                </li>
+            </ul>
+
+            <ul id="warning">
+                <li class="list">
+                    <div>
+                        <img src="assets/icons/warning-circle.svg" alt="">
+                        <span>O item foi removido da lista</span>
+                    </div>
+                    <button class="x"><img src="assets/icons/delete.svg" alt=""></button>
+                </li>
+            </ul>
+            
+        </section>
+    </main>    
+    <script src="script.js"></script>
+</body>
+</html>
